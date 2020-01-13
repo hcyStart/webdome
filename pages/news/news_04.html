@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../reportlist.html",linkTitle:_selfLinkTitle[Number(type-1)]}];                 renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+//               $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//                });
+//                $(".nav-main-item").on("mouseleave",function(event){
+//                    var curDom = $(event.target);
+//                    $(".nav-hide").hide();
+//                });
+//                creatFastLink();
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+            function creatFastLink() {
+                var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+                var linkDom = "";
+                for(var i=0;i<linkData.length;i++){
+                    linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+                }
+                $("#fastLinkInco").after(linkDom);
+            }
+            function onlineConsult(){
+                alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+            }
+            function buildPage(){
+                alert("正在建设中...");
+            }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>          
+    <main id="content" role="main">
+        <div class="index-block">
+		<div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">不动产兴庆区分中心优化窗口服务， 做百姓“贴心人“
+                  <!--新闻图片1（图片来源于网络示例）-->
+                </h2>
+                <div class="article-content">
+                        <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                        <!--新闻段落1-->
+                        <div class="article-section">  银川市不动产登记事务中心兴庆区分中心自2018年8月份成立以来，始终把百姓的事记在心中、扛在肩上、抓在手上，为兴庆区办事群众提供了极大方便！在优化银川市营商环境建设中，分中心切实转变作风，做到“三优化”，力争再提窗口服务水平。</div>
+                        <!--新闻段落2-->
+                        <div class="article-image"><image src="../../images/news/news_04_01.jpg" style="width:553px;height:415px;" alt="新闻图片"></div>
+                        <!--新闻段落3-->
+                        <div class="article-section">一是优化硬件环境。根据中心“一窗受理，集成服务”的要求，主动适应职能整合新要求，分中心经过认真梳理，本着让群众少走路、不走回头路的思路，再次整合登记流程，重新设置了服务窗口，将调档、完税、缴费窗口再做调整，努力打造登记“流水线式”办理模式，为办事群众提供最贴心的服务。</div>
+                        <!--新闻段落4-->
+                        <div class="article-image"><image src="../../images/news/news_04_02.jpg" style="width:552px;height:414px;" alt="新闻图片"></div>
+                        <!--新闻段5-->
+                        <div class="article-section">二是优化服务质量。针对窗口整合后群众因不了解新的流程可能给办事群众带来的不便，积极加强窗口人员业务培训，耐心讲解办理事项和流程，全力推行“一站式”服务，把首问负责制、一次性告知制、限时办结制和责任追究制落到实处。</div>
+                        <!--新闻段6-->
+                        <div class="article-image"><image src="../../images/news/news_04_03.jpg" style="width:553px;height:415px;" alt="新闻图片"></p></div>
+                        <div class="article-section"></div>
+                        <!--新闻发布单位（允许0/1个）-->
+                        <div class="article-author">银川市不动产登记事务中心</div>
+                        <!--新闻发布时间（允许0/1个）-->
+                        <div class="article-date">2019年5月27日</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

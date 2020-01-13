@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+        $(function () {
+           var _selfType = location.search.split("?")[1];
+           if(_selfType){
+            var type = _selfType.split("=")[1];                  
+           }
+           var _selfLinkTitle = ["通知公告","办事指南","法律法规"];
+           var localPath = location.href;
+           var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"公开"},{link:"../../pages/guide",linkTitle:"办事指南"}];       
+           renderSecondLink();
+           function renderSecondLink(){
+              var linkDom ="您所在的位置：";  
+              for(var j= 0;j<_selfLink.length;j++){
+                linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                if(j!=_selfLink.length-1){
+                  linkDom += ' > ' ; 
+                }
+              }
+              $(".link-position").empty();
+              $(".link-position").html(linkDom);
+           }
+//           $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//            });
+//            $(".nav-main-item").on("mouseleave",function(event){
+//                var curDom = $(event.target);
+//                $(".nav-hide").hide();
+//            });
+//            creatFastLink();
+            $("#main-header").load("../../header.html");
+            $("#nav-footer").load("../../footer.html");
+        })
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+        function onlineConsult(){
+            alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        } 
+        function buildPage(){
+            alert("正在建设中...");
+        }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+        您所在的位置：
+        <a href="../../index.html" target="_blank" title="首页">首页</a>
+        >
+        <a href="../../pages/guide" target="_blank" title="办事指南">办事指南</a>
+    </div>
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="notice-detail">
+                <h1>因夫妻约定转移不动产申请转移登记</h1>
+                <br>
+                <br>
+                <div class="notice-content">
+                    <h3><strong>设定依据：</strong></h3>
+                    <div><span >1、《中华人民共和国物权法》(2007年3月16日主席令第六十二号)</span></div>
+                    <div><span >2、《不动产登记暂行条例》（中华人民共和国国务院令 第656号）</span></div>
+                    <div><span >3、《不动产登记暂行条例实施细则》</span></div>
+                    <br>
+                    <h3><strong>提交材料：</strong></h3>
+                    <div><span >1、不动产登记申请表；（原件）</span></div>
+                    <div><span >2、身份证明材料：（原件、复印件一份，原件核对后退回）</span></div>
+                    <div>　　<span >境内自然人：提交居民身份证或军官证、士官证；身份证遗失的，应提交临时身份证。未成年人可以提交居民身份证或户口簿；</span></div>
+                    <div><span>3、原《国有土地使用证》、《房屋所有权证》或者《不动产权证》；（原件）</span></div>
+                    <div><span>4、基于婚姻关系的夫妻约定，提交《结婚证》和“夫妻财产约定书”；离婚的，提交《离婚证》和“离婚协议书”；（原件） </span></div>
+                    <div><span>5、离婚转移不动产的，但在“离婚协议书”中没有明确转移不动产的内容，离婚双方可以当场提交因离婚转移不动产的“财产约定书”；（原件）</span></div>
+                    <div><span >6、“夫妻财产约定书”或者“离婚协议书”、“财产约定书”均需备案； </span></div>
+					 <div><span >7、经济适用房、房改房、集资房、康居安置房以及其他土地使用权类型为划拨的房屋，或者以划拨方式取得的国有土地使用权，由单独所有约定为夫妻共有的，需提交增加配偶为共有人不再享受国家优惠政策的书面承诺；（原件）</span></div>
+					 <div><span >8、免税证明。（原件）</span></div>
+                    <div><span>备注：申请共有的，需全体共有人共同申请；</span></div>
+                    <div>　　<span>委托办理的，代理人应当提供被代理人签字或者盖章的授权委托书（原件）、被代理人和代理人身份证明（复印件）。</span></div>
+                    <br>
+                    <h3><strong>办理程序：</strong></h3>
+                    <div><span>申请受理&#8594;审核&#8594;记载于登记簿&#8594;缮证发证</span></div>
+                    <br>
+                    <h3><strong>办理时限：</strong></h3>
+                    <div><span>自做出受理决定之日起 5个工作日办结（不含权籍调查及公告时间）。</span></div>
+                    <div><span>政府招商引资项目及新开办企业类：自作出受理决定起4个工作日。</span></div>
+                    <br>
+                    <h3><strong>收费标准：</strong></h3>
+                    <div><span>依据国家发展和改革委员会、财政部文件发改价格规﹝2016﹞2559号登记费：住宅：80/件；非住宅550/件；小微企业免收登记费。 </span></div>
+                    <br>
+                    <h3><strong>办理单位：</strong></h3>
+                    <div><span>银川市不动产登记事务中心</span></div>
+                    <br>
+                    <h3><strong>办理地点：</strong></h3>
+                    <div><span>银川市民大厅B3厅</span></div>
+                    <br>
+                    <h3><strong>咨询电话：</strong></h3>
+                    <div><span>5555412、5555413</span></div>
+                    <br>
+                    <h3><strong>查询网址：</strong></h3>
+                    <div><a href="http://zrzyj.yinchuan.gov.cn" target="_blank">http://zrzyj.yinchuan.gov.cn</a></div>
+                    <div><a href="http://smdt.yinchuan.gov.cn" target="_blank">http://smdt.yinchuan.gov.cn</a></div>
+                    <br>
+                    <h3><strong>办理流程：</strong></h3>
+                    <img width="472" height="423" src="guide-zhuanyi-05_wps18.jpg" ><br>
+                </div>
+          </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

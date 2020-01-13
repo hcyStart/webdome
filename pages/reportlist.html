@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>新闻 | 银川市不动产登记事务中心</title>
+    <meta name="keywords" content="银川市不动产登记事务中心,银川不动产,银川不动产中心,银川市不动产,银川市不动产中心" />
+    <meta name="description" content="银川市不动产登记事务中心为隶属于银川市自然资源局的事业单位。承办市本级土地登记、房屋登记、林地登记等不动产登记工作。负责拟定市本级不动产登记业务规范和工作流程。" />
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/news.css">
+    <script src="../js/jquery-3.4.1..min.js"></script>
+    <script src="../js/swiper_4.5.0/js/swiper.min.js"></script>
+    <script>
+        $(function () {
+            var item =['守初心主动担当作为 找差距推动不动产登记工作全面落','认真学习党章 严格遵守党章 银川市不动产登记事务中心党支部开展第二季度党课学习','不动产“信易登”荣获“银川市十大信用典型案例','不动产兴庆区分中心优化窗口服务， 做百姓“贴心人”','聚集青春力量 再次喜获殊荣--银川市不动产登记事务中心获评区级“青年文明号”'];
+            var swiper = new Swiper('.swiper-container', {
+                autoplay:false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<a href="../pages/news/news_'+Number(index+1)+'.html" class="' + className + '" title="'+ item[index] +'">' + item[index] + '</a>';
+                    }
+                }
+            });
+            $("#main-header").load("../header.html");
+             $("#nav-footer").load("../footer.html");
+//            $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//            });
+//            $(".nav-main-item").on("mouseleave",function(event){
+//                var curDom = $(event.target);
+//                $(".nav-hide").hide();
+//            });
+//            creatFastLink();
+        });
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+        function onlineConsult(){
+            alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        }
+        function buildPage(){
+             alert("正在建设中...");
+        }   
+    </script>
+</head>
+
+<body style="zoom: 1;">
+<header id="main-header" class="header-main">
+</header>
+<div class="link-position">
+    您所在的位置：
+    <a href="../index.html" target="_blank" title="首页">首页</a>
+    >
+    <a href="#"  title="动态">动态</a>
+    >    
+    <a href="../pages/reportlist.html" target="_blank" title="图片新闻">图片新闻</a>    
+</div>
+<main id="content" role="main">
+    <div class="index-block">
+        <div class="info-title-box">
+            <!-- <div class="info-title">
+                <span class="list-title">您的位置:</span>
+                <span>首页>新闻</span>
+            </div> -->
+        </div>
+        <div class="f1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="../pages/news/news_01.html?type=3"><img class="news-image"
+                        src="../images/news/news_01_01.jpg">
+                        </a>
+                    </div>
+                    <div class="swiper-slide"><a href="../pages/news/news_02.html?type=3"><img class="news-image"
+                        src="../images/news/news_02_01.jpg">
+                    </a>
+                    </div>
+                    <div class="swiper-slide"><a href="../pages/news/news_03.html?type=3"><img class="news-image"
+                        src="../images/news/news_03_01.jpg">
+                    </a>
+                    </div>
+                    <div class="swiper-slide"><a href="../pages/news/news_04.html?type=3"><img class="news-image"
+                        src="../images/news/news_04_01.jpg">
+                    </a>
+                    </div>
+                    <div class="swiper-slide"><a href="../pages/news/news_05.html?type=3"><img class="news-image"
+                        src="../images/news/news_05_01.jpg">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="index-block">
+        <ul class="news-list">
+            <li class="news-list-item">
+                <a href="../pages/news/news_01.html?type=3">
+                    <img class="item-img" src="../images/news/news_01_01.jpg"><!---->
+                    <span class="item-text" title="守初心主动担当作为 找差距推动不动产登记工作全面落">守初心主动担当作为 找差距推动不动产登记工作全面落</span>
+                </a>
+            </li>
+            <li class="news-list-item">
+                <a href="../pages/news/news_02.html?type=3">
+                    <img class="item-img" src="../images/news/news_02_01.jpg"><!---->
+                    <span class="item-text" title="认真学习党章 严格遵守党章 银川市不动产登记事务中心党支部开展第二季度党课学习">认真学习党章 严格遵守党章 银川市不动产登记事务中心党支部开展第二季度党课学习</span>
+                </a>
+            </li>
+            <li class="news-list-item">
+                <a href="../pages/news/news_03.html?type=3">
+                    <img class="item-img" src="../images/news/news_03_01.jpg"><!---->
+                    <span class="item-text" title="不动产“信易登”荣获“银川市十大信用典型案例">不动产“信易登”荣获“银川市十大信用典型案例</span>
+                </a>
+            </li>
+            <li class="news-list-item">
+                <a href="../pages/news/news_04.html?type=3">
+                    <img class="item-img" src="../images/news/news_04_01.jpg"><!---->
+                    <span class="item-text" title="不动产“信易登”荣获“银川市十大信用典型案例">不动产兴庆区分中心优化窗口服务， 做百姓“贴心人”</span>
+                </a>
+            </li>
+            <li class="news-list-item">
+                <a href="../pages/news/news_05.html?type=3">
+                    <img class="item-img" src="../images/news/news_05_01.jpg"><!---->
+                    <span class="item-text" title="聚集青春力量 再次喜获殊荣--银川市不动产登记事务中心获评区级“青年文明号”">聚集青春力量 再次喜获殊荣--银川市不动产登记事务中心获评区级“青年文明号”</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer id="nav-footer" class="nav-footer">
+</footer>
+</body>
+
+</html>

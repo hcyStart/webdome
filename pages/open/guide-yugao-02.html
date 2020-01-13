@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+        $(function () {
+           var _selfType = location.search.split("?")[1];
+           if(_selfType){
+            var type = _selfType.split("=")[1];                  
+           }
+           var _selfLinkTitle = ["通知公告","办事指南","法律法规"];
+           var localPath = location.href;
+           var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"公开"},{link:"../../pages/guide",linkTitle:"办事指南"}];       
+           renderSecondLink();
+           function renderSecondLink(){
+              var linkDom ="您所在的位置：";  
+              for(var j= 0;j<_selfLink.length;j++){
+                linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                if(j!=_selfLink.length-1){
+                  linkDom += ' > ' ; 
+                }
+              }
+              $(".link-position").empty();
+              $(".link-position").html(linkDom);
+           }
+//           $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//            });
+//            $(".nav-main-item").on("mouseleave",function(event){
+//                var curDom = $(event.target);
+//                $(".nav-hide").hide();
+//            });
+//            creatFastLink();
+            $("#main-header").load("../../header.html");
+            $("#nav-footer").load("../../footer.html");
+        })
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+        function onlineConsult(){
+            alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        } 
+        function buildPage(){
+            alert("正在建设中...");
+        }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+        您所在的位置：
+        <a href="../../index.html" target="_blank" title="首页">首页</a>
+        >
+        <a href="../../pages/guide" target="_blank" title="办事指南">办事指南</a>
+    </div>
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="notice-detail">
+                <h1>对预购新建商品房进行预告申请预告登记</h1>
+                <br><br>
+				<h3><strong>◆事项名称：对预购新建商品房进行预告申请预告登记</strong></h3>
+                <div class="notice-content">
+                    <h3><strong>◆设定依据：</strong></h3>
+                    <div><span >1、《中华人民共和国物权法》(2007年3月16日主席令第六十二号)</span></div>
+                    <div><span >2、《不动产登记暂行条例》（中华人民共和国国务院令 第656号）</span></div>
+                    <div><span >3、《不动产登记暂行条例实施细则》</span></div>
+                    <br>
+                    <h3><strong>◆提交材料：</strong></h3>
+                    <div><span >1、不动产登记申请表；（原件）</span></div>
+                    <div>2、申请人合法有效的身份证明；（原件、复印件一份，原件核对后退回） </div>
+                    <div>（1）申请人为自然人的，提交居民身份证，或者：户口簿、出生证、军（警）官证、士兵证、文职干部证、学员证、来往内地通行证、来往大陆通行证、台胞证、护照、长期居留身份证件； </div>
+                    <div>（2）申请人为法人或者非法人组织的，提交营业执照、组织机构代码证（统一社会信用代码证书），或者：事业单位法人证书、社会团体法人登记证书、基金会法人登记证书、民办非企业单位登记证书、合作经济组织登记证书；</div>
+                    <div>境外登记注册的法人或者非法人组织，提交其在境内设立分支机构的批准文件或者注册证明、登记证明等身份证明。这些证明材料应当按照规定办理相应的公证、认证手续。</div>
+                    <div>法人提交法定代表人（非法人提交负责人）的身份证复印件、经办人的身份证复印件（2份复印件均需加盖公章）以及法定代表人身份证明书、授权委托书（证明书、委托书均需原件）； </div>
+                    <div>3、已备案的《商品房买卖合同》正本；（核实原件后收取复印件） </div>
+                    <div>4、当事人关于预告登记的书面约定；（《商品房买卖合同》中有关于预告登记约定条款的，不提交）；（原件）</div>
+                    <div></div>
+                    <div><span>备注：申请共有的，需全体共有人共同申请；共同共有的，需提供亲属关系证明；按份共有的，需提供明确各自份额的证明材料； </span></div>
+                    <div>委托办理的，代理人应当提供被代理人签字或者盖章的授权委托书、被代理人和代理人身份证明。</div>
+                    <br>
+                    <h3><strong>◆办理程序：</strong></h3>
+                    <div><span>申请受理&#8594;审核&#8594;记载于登记簿&#8594;缮证发证</span></div>
+                    <br>
+                    <h3><strong>◆办理时限：</strong></h3>
+                    <div>自做出受理决定之日起2个工作日。（不含公告期限）</div>
+                    <div><strong>政府招商引资项目及新开办企业类：自作出受理决定起1个工作日。</strong> </div>
+                    <br>
+                    <h3><strong>◆收费标准：</strong></h3>
+                    <div>不收费</div>
+                    <br>
+                    <h3><strong>◆办理单位：</strong></h3>
+                    <div><span>银川市不动产登记事务中心</span></div>
+                    <br>
+                    <h3><strong>◆办理地点：</strong></h3>
+                    <div><span>银川市民大厅B3厅</span></div>
+                    <br>
+                    <h3><strong>◆咨询电话：</strong></h3>
+                    <div><span>5555412、5555413</span></div>
+                    <br>
+                    <h3><strong>◆查询网址：</strong></h3>
+                    <div><a href="http://zrzyj.yinchuan.gov.cn" target="_blank">http://zrzyj.yinchuan.gov.cn</a></div>
+                    <div><a href="http://smdt.yinchuan.gov.cn" target="_blank">http://smdt.yinchuan.gov.cn</a></div>
+                    <br>
+                    <h3><strong>◆办理流程：</strong></h3>
+                    <img width="472" height="423" src="guide-yugao-02_wps34.jpg" ><br>
+              </div>
+          </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

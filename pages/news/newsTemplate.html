@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"../reportlist.html",linkTitle:"动态"},{link:"../news/"+localPath.substring(localPath.lastIndexOf('/')+1,localPath.length),linkTitle:_selfLinkTitle[Number(type-1)]}];        
+               renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+            })
+    </script>
+</head>
+
+<body style="zoom: 1;">        
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="article-detail">
+                <h1  class="article-title">办公厅关于开展矿产资源节约和综合利用先进适用技术目录更新工作的通知</h1>
+                <div class="article-content">
+                        <div class="article-section">关于公开征集绿色矿山标识的函</div>
+                        <div class="article-section">为加快矿产资源节约与综合利用技术创新和推广应用，按照《国土资源部关于推广先进适用技术提高矿产资源节约与综合利用水平的通知》（国土资发〔2012〕154号）和《国土资源部关于推进矿产资源全面节约和高效利用的意见》（国土资发〔2016〕187号）要求，自然资源部将开展矿产资源节约与综合利用先进适用技术更新工作。</div>
+                        <div class="article-author">办公厅</div>
+                        <div class="article-date">2019年6月28日</div>
+                    </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

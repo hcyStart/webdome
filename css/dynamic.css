@@ -1,0 +1,141 @@
+body {
+    background-color: #F1F1F1;
+}
+.nav-main-item{
+    width: 13.75%;
+}
+#content{
+    width: 1140px;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fbfbfb;
+}
+.search-panbel{
+    height: 40px;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+.search-title{
+    font-size: 18px;
+    color: #2f2d85;
+    padding-left: 32px;
+}
+.search-panbel::before{
+    content: '';
+    background-image: url(../images/topic.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+}
+.input-content{
+    background: #f1f1f1;    
+}
+.search-input:focus{
+    border: 1px solid #57a3f3;
+    outline: none; 
+}
+.search-input{
+    height: 35px;
+    border-radius: 4px;
+    background: #f1f1f1;
+    border: none;
+    padding: 0 55px 0 9px;
+    width: 86%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-btn{
+    background: url(../images/typeSearch.png) no-repeat;
+    width: 45px;
+    border: none;
+    float: right;
+    height: 33px;
+    background-position-y: center;
+    background-position-x: left;
+    position: relative;
+    left: -45px;
+    top: -35px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.categoricaType-info{
+    height: 490px;
+    padding-top: 20px;
+}
+.type-panel{
+    width: 220px;
+    cursor: pointer;
+    float: left;
+    padding-right: 20px;
+    height: 510px; 
+}
+.type-list{
+    background: #6775be;    
+    border: 1px solid  #6775be;
+    color: #ffffff;
+    margin: 2px 0;
+}
+.list-title{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.list-content{
+    font-size: 14px;
+    text-align: left;
+    color: #333333;
+    padding-left: 25px;
+    border-bottom: 1px solid #e7e7e7;   
+    height: 27px;
+    line-height: 27px; 
+}
+.content-info{
+    padding-left: 8px;    
+}
+.list-active{
+    background-color:#ffffff;
+    color: #6775be;    
+}
+.list-content:hover {
+    color: #77bbe5;
+}
+.detail-list{
+    display: inline-block;
+    width: 96%;
+    position: relative;
+    top: -15px;
+}
+.detail-content{
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+}
+.detail-inco{
+    font-size: 18px;
+    color: #9a9a9a;
+    padding-right: 20px;
+    vertical-align: middle;
+    float: left;  
+}
+.detail-info{
+    width: 760px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+    display: inline-block;
+    font-size: 16px;    
+}
+.detail-info:hover{
+    color: #333333; 
+}
+.detail-date{
+    float: right;
+    font-size: 14px;
+    color: #999999;
+}

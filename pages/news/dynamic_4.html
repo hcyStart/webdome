@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../dynamic.html?type="+type,linkTitle:_selfLinkTitle[Number(type-1)]}];        
+               renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+//               $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//                });
+//                $(".nav-main-item").on("mouseleave",function(event){
+//                    var curDom = $(event.target);
+//                    $(".nav-hide").hide();
+//                });
+//                creatFastLink();
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+            function creatFastLink() {
+                var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+                var linkDom = "";
+                for(var i=0;i<linkData.length;i++){
+                    linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+                }
+                $("#fastLinkInco").after(linkDom);
+            }
+            function onlineConsult(){
+                 alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+            }
+            function buildPage(){
+                alert("正在建设中...");
+            }
+        </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>         
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">自然资源部办公厅关于完善信息平台网络运维环境推进不动产登记信息共享集成有关工作的通知</h2>
+                <div class="article-content">
+                    <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                    <!--新闻段落1-->
+                        <div class="article-section">各省、自治区、直辖市自然资源主管部门，新疆生产建设兵团自然资源主管部门：</div>
+                        <div class="article-section">为深入贯彻落实党中央、国务院关于深化“放管服”改革和《国务院办公厅关于压缩不动产登记办理时间的通知》（国办发〔2019〕8号）要求，有效解决当前部门间网络联通、信息共享、业务协同等方面存在的实际困难，现就完善不动产登记信息管理基础平台（以下简称“信息平台”）网络运维环境，推动不动产登记信息共享集成有关工作通知如下：</div>
+
+                        <!--新闻段落2-->
+                        <div class="article-section">一、总体要求</div>
+                    <div class="article-section">坚持以人民为中心，以保障信息安全为前提，以不动产登记流程优化图为依据，力争在2～3年内，全国所有地级及以上城市和具备条件的县区，从三个层面，分步骤完成信息平台布局优化和安全防护工作：将与企业和群众互动紧密的申请、受理等业务环节在2020年底前迁移至互联网运行，实现借助各种终端设备随时随地可申请、可查看；将审核、登簿等业务环节及数据迁移至与互联网逻辑隔离的电子政务外网（以下简称“政务外网”），与各级政府、相关部门政务服务平台应通尽通，实现跨地区、跨部门、跨层级网络互联和信息互通共享；将不动产空间图形数据及权籍调查成果审核环节部署在与互联网物理隔离的业务内部局域网（以下简称“业务内网”），确保数据安全。在此基础上，统筹推进信息互通共享和“互联网+不动产登记”，大幅精简材料、节约成本、压缩时间、提高效率，切实增强企业和群众改革获得感。</div>
+
+                        <!--新闻段落n-->
+                        <div class="article-section">二、主要任务</div>
+                    <div class="article-section">
+                          （一）在互联网上构建“一窗受理、并行办理”的不动产登记网上办事大厅，推行线上统一申请、集中受理和自助查询。各地应依托互联网上的当地政府或本部门政务服务平台，充分利用已有线上“一窗受理”平台，坚持以为企业和群众“办好一件事”为标准，研发部署不动产登记、交易监管和税收征缴全流程、全环节的在线受理系统，建设省级或市级统一的不动产登记网上办事大厅，将线下不动产登记“一窗受理、并行办理”延伸到线上，实现24小时“不打烊”。企业和群众经身份核验后，可在线提交申请、线上反馈受理结果，自动分发各相关部门并行办理有关业务，提供网上预约、网上支付、网上查询等服务。部将在互联网上建立全国不动产登记业务受理门户，与各地不动产登记在线受理系统关联，为企业和群众提供全国各地不动产登记申请入口服务。
+                        </div>
+                        <div class="article-section">
+                         （二）积极稳妥地将不动产登记审核、登簿、缮证业务迁移至政务外网，强化部门系统对接和信息互通。各地应积极稳妥地将当前主要部署在业务内网的审核（权籍调查成果审核除外）、登簿、缮证环节业务和不动产登记数据库（不含空间图形数据），通过等保测评后逐步迁移部署到政务外网，并做好信息平台与政府数据共享交换平台或部门业务系统的对接。在审核环节，应充分利用税务部门推送和其他部门共享的信息，实现在线比对校验。在登簿环节，同时将登记结果和登簿日志实时写入政务外网不动产登记数据库，同步自动导入业务内网不动产登记数据库，并通过自然资源业务网实时接入省级和国家信息平台。
+                        </div>
+                        <div class="article-section">
+                         （三）严格规范地将不动产权籍调查成果审核业务部署在业务内网，确保信息保密安全。各地应将本辖区不动产权属调查、不动产测绘、基础地理等空间图形数据及审核业务部署在业务内网。申请不动产首次登记或涉及界址界限变化的不动产变更登记时，申请人提交的不动产界址、空间界限、面积等权籍调查成果，应在受理后导入业务内网不动产登记数据库；大于6平方公里的权籍调查成果数据需严格保密，通过离线方式导入。权籍调查审核结果应及时离线反馈至外网系统，支撑登记审核业务需要。
+                        </div>
+                        <div class="article-section">
+                         （四）大力推动信息互通共享，有力支撑不动产登记提速增效。各地应积极推动当地政府履行信息共享集成的主体责任，进一步梳理各类登记业务信息需求，了解相关部门数据存储层级及其网络环境，制定详细的共享工作计划，对接政务服务部门和相关单位，因地制宜推进信息共享。条件允许的地方，应尽快完成内外网迁移工作，将业务系统联通当地政府数据共享交换平台；暂时无法完成网络迁移的地方，应尽快将业务系统与部署在自然资源业务网上的不动产登记精准查询节点联通，支撑一线登记窗口实时在线获取相关部门信息，服务在线比对校核工作。部将协调相关部门，力争对国家层面归集存储的自然人身份、法人和非法人组织统一社会信用代码、金融许可证、司法判决书、婚姻登记、涉及人员单位的地名、死亡医学证明信息提供部际“总对总”共享服务。各级要优势互补，各负其责，齐抓共推，形成合力。能够通过共享获取或核验的信息，不得要求企业群众重复提交。     
+                        </div>
+                        <div class="article-section">
+                         （五）加快推进存量数据整合，全力支撑信息共享集成。各地要积极开展不动产权籍补充调查，加快存量数据整合与质量提升，2019年底前，确保所有市县实现城镇国有建设用地使用权和房屋所有权存量现势登记数据清理、关联挂接、补录补测、整合入库与更新汇交工作。2020年底前，力争基本完成城镇国有建设用地使用权和房屋所有权的存量历史登记数据整合汇交工作，夯实不动产登记信息基础。    
+                        </div>
+                    <div class="article-section">三、组织实施</div>
+                    <div class="article-section">
+                         （一）加强组织领导。省级自然资源主管部门要加强统筹协调，组织指导各市县制定详细实施方案，明确时间表、路线图和责任人，积极争取地方党委政府支持，加大对完善信息平台网络运维环境所需软硬件设备的经费保障力度，做实做细做好工作，确保按期完成各项任务。
+                        </div>
+                        <div class="article-section">（二）严格安全防护。各地应根据国家网络安全法律规定，切实加强信息平台网络、服务器、数据、系统等方面的安全防护，在内外网运维环境通过三级等保测评后，逐步完成相关系统迁移。互联网与政务外网之间通过双向网闸、政务外网与业务内网之间通过单向网闸和离线摆渡方式实现数据互通。完善不动产登记信息安全应急预案，定期开展演练，设置信息平台强口令，定期修改密码。对权利人名称及证件号码等数据项进行加密存储和传输，界面展示时，予以去标识化处理，保护好个人敏感信息。</div>
+                        <div class="article-section">（三）切实便民利企。各地应积极创造条件，加快完善信息平台网络运维环境，推动信息互通共享和“互联网+不动产登记”，切实解决群众办事遇到的“堵点”“难点”问题，不断提升不动产登记便民利企服务水平。</div>
+                        <!--新闻发布单位（允许0/1个）-->
+                        <div class="article-author">自然资源部办公厅</div>
+                        <!--新闻发布时间（允许0/1个）-->
+                        <div class="article-date">2019年6月17日</div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

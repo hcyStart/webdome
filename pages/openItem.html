@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <meta name="keywords" content="银川市不动产登记事务中心,银川不动产,银川不动产中心,银川市不动产,银川市不动产中心" />
+    <meta name="description" content="银川市不动产登记事务中心为隶属于银川市自然资源局的事业单位。承办市本级土地登记、房屋登记、林地登记等不动产登记工作。负责拟定市本级不动产登记业务规范和工作流程。" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/openItem.css">   
+    <script src="../js/jquery-3.4.1..min.js"></script>
+    <script>
+        $(function () {
+           var _selfType = location.search.split("?")[1];
+           if(_selfType){
+                var type = _selfType.split("=")[1];                  
+            }
+           var _slefOpenItemData = [[{link:"../pages/open/notice_1.html?type=1",linkTitle:"通知公告1",linkDate:"2019/06/22"},{link:"../pages/open/notice_2.html?type=1",linkTitle:"通知公告2",linkDate:"2019/06/23"},{link:"../pages/open/notice_3.html?type=1",linkTitle:"通知公告3",linkDate:"2019/06/24"}],
+           [{link:"../pages/open/guide_1.html?type=2",linkTitle:"办事指南1",linkDate:"2019/06/22"},{link:"../pages/open/guide_2.html?type=2",linkTitle:"办事指南2",linkDate:"2019/06/23"},{link:"../pages/open/guide_3.html?type=2",linkTitle:"办事指南3",linkDate:"2019/06/24"}],
+           [{link:"../pages/open/law_1.html?type=3",linkTitle:"法律法规1",linkDate:"2019/06/22"},{link:"../pages/open/law_2.html?type=3",linkTitle:"法律法规2",linkDate:"2019/06/23"},{link:"../pages/open/law_3.html?type=3",linkTitle:"法律法规3",linkDate:"2019/06/24"}]];
+           $("#listType"+type).addClass("list-active");
+           var _selfLink = [{link:"../index.html",linkTitle:"首页"},{link:"../pages/openItem.html?type="+type,linkTitle:"公开"}];        
+           //createopenItemDom(type);
+           renderSecondLink();
+           $(".type-list").off("click").on("click",function(event){
+              var _targetEvent = $(event.target);
+              var type = _targetEvent.parent(".type-list").data("id");
+              _selfLink = [{link:"../index.html",linkTitle:"首页"},{link:"../pages/openItem.html?type="+type,linkTitle:"公开"}];   
+              $(".type-list").removeClass("list-active");
+              _targetEvent.parent(".type-list").addClass("list-active");
+              createopenItemDom(type);
+              renderSecondLink();
+           });
+           function createopenItemDom(type){
+            var openItemDom ="";  
+            var OpenItemData = _slefOpenItemData[Number(type-1)];
+            for(var i=0;i<OpenItemData.length;i++) {
+                openItemDom += '<li class="detail-list"><div class="detail-content">'+    
+                    '<a href='+OpenItemData[i].link+'>'+                  
+                    '<span class="detail-inco">></span>'+
+                    '<span class="detail-info">'+OpenItemData[i].linkTitle+'</span>'+
+                    '<span class="detail-date">['+OpenItemData[i].linkDate+']</span>'+
+                    '</a></div></li>';
+              }
+              $("#opemItemList").html(openItemDom);
+           }
+           function renderSecondLink(){
+              var linkDom ="您所在的位置：";  
+              for(var j= 0;j<_selfLink.length;j++){
+                linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                if(j!=_selfLink.length-1){
+                  linkDom += ' > ' ; 
+                }
+              }
+              $(".link-position").empty();
+              $(".link-position").html(linkDom);
+           }
+//           $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//            });
+//            $(".nav-main-item").on("mouseleave",function(event){
+//                var curDom = $(event.target);
+//                $(".nav-hide").hide();
+//            });
+//            creatFastLink();
+            $("#main-header").load("../header.html");
+             $("#nav-footer").load("../footer.html");
+        });
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+        function onlineConsult(){
+            alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        }
+        function buildPage(){
+             alert("正在建设中...");
+        }   
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+ 
+    </div>    
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="search-panbel">
+                <label class="search-title">标题</label>
+                    <input type="text" autocomplete="off" class="search-input">
+                    <span class="input-btn"><i class="search-btn"></i></span>
+            </div>
+            <div class="categoricaType-info">
+                <ul class="type-panel">
+                    <li>
+                        <ul class="type-list" id="listType1" data-id="1">
+                            <div class="list-title">通知公告</div>
+                            </ul>
+                        <ul class="type-list" id="listType2"  data-id="2">
+                            <div class="list-title">办事指南</div>
+                        </ul>
+                        <ul class="type-list" id="listType3"  data-id="3">
+                            <div class="list-title">法律法规</div>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="type-detail" id="opemItemList">                           
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

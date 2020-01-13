@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>西安嘉瑞飞材料有限公司</title>
+    <meta name="keywords" content="西安嘉瑞飞材料有限公司,西安嘉瑞飞,西安嘉瑞飞材料,嘉瑞飞材料有限公司,嘉瑞飞材料" />
+    <meta name="description" content="西安嘉瑞飞材料有限公司" />
+    <script>
+        $(function () {
+               $(".nav-main-item").on("mouseover",function(event){
+                    var curDom = $(event.target);
+                    $(event.target).find(".nav-hide").show();
+               });
+               $(".nav-main-item").on("mouseleave",function(event){
+                    var curDom = $(event.target);         
+                    $(".nav-hide").hide();
+               });
+            var Menulevel_1 = "./";
+            var Menulevel_2 = "../";
+            var Menulevel_3 = "../../";
+            var typePath = "";
+            var curPath = location.href.substring(location.href.search("pages"));
+            if(curPath.search("pages") == -1){
+                typePath = Menulevel_1;
+            }else if(curPath.search("news") != -1||curPath.search("open") != -1||curPath.search("partyinfo") != -1){
+                typePath = Menulevel_3;
+            }else if(curPath.search("pages")==0&&curPath.search("news") == -1&&curPath.search("open") == -1){
+                typePath = Menulevel_2;
+            }
+            $("#banner-index-title").attr("src",typePath+"images/index_title.png");
+            $("#indexImage").attr("src",typePath+"images/menu_index.png");
+            $("#indexUrl").attr("href",typePath+"index.html");
+            $("#organizationImage").attr("src",typePath+"images/menu_orgs.png");
+            $("#orgInfoDetailUrl").attr("href",typePath+"pages/orgInfoDetail");
+            $("#contactDetailUrl").attr("href",typePath+"pages/contactDetail");
+            $("#dynamicImage").attr("src",typePath+"images/menu_news.png");
+            $("#newsUrl").attr("href",typePath+"pages/reportlist.html");
+            $("#dynamicUrl").attr("href",typePath+"pages/dynamic.html?type=2");
+            $("#publicImage").attr("src",typePath+"images/menu_public.png");
+            $("#afficheUrl").attr("href",typePath+"pages/affiche1");
+            $("#guideUrl").attr("href",typePath+"pages/guide");
+            $("#lawUrl").attr("href",typePath+"pages/law");
+            $("#downloadUrl").attr("href",typePath+"pages/matereal_download");
+            $("#zhuantiImage").attr("src",typePath+"images/icon/zhuanti2.png");
+            $("#interactionImage").attr("src",typePath+"images/menu_interaction.png");
+            $("#practiceQaUrl").attr("href",typePath+"pages/practiceQa1");
+            $("#servicesImage").attr("src",typePath+"images/menu_services.png")
+            $("#partBuildUrl").attr("href",typePath+"pages/partyBuild");
+            $("#approintmentUrl").attr("href",typePath+"pages/appointment.html");
+            
+        });
+        function onlineConsult(){
+             alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        }
+        function buildPage(){
+             alert("正在建设中...");
+        }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <div id="banner">
+        <img src="images/index_title.png" id="banner-index-title">
+        <div id="banner-mobile">
+            <button class="banner-language">English</button>
+            <img src="images/index_mobile.png" id="banner-index-mobile">
+        </div>
+    </div>
+    </div>
+    <div class="nav-toolbox-wrapper">
+        <nav id="main-nav" class="nav-main" role="navigation">
+            <ul>
+                <li class="nav-main-item">
+                    <a id="indexUrl" href="">首页</a>
+                </li>
+                <li class="nav-main-item">
+                    <a href="#organizationSlot">公司简介</a>
+                </li>
+                <li class="nav-main-item">
+                    <a href="#openSlot">产品中心</a>
+                </li>
+                <li class="nav-main-item">
+                    <a href="#serviceSlot">核心材料</a>
+                </li>
+                <li class="nav-main-item">
+                    <a href="#InteractionSlot">服务与支持</a>
+                </li>
+                <li class="nav-main-item">
+                    <a href="#topicSlot">联系我们</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

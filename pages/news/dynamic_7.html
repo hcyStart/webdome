@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../dynamic.html?type="+type,linkTitle:_selfLinkTitle[Number(type-1)]}];        
+               renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+//               $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//                });
+//                $(".nav-main-item").on("mouseleave",function(event){
+//                    var curDom = $(event.target);
+//                    $(".nav-hide").hide();
+//                });
+//                creatFastLink();
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+            function creatFastLink() {
+                var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+                var linkDom = "";
+                for(var i=0;i<linkData.length;i++){
+                    linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+                }
+                $("#fastLinkInco").after(linkDom);
+            }
+            function onlineConsult(){
+                alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+            }
+            function buildPage(){
+                alert("正在建设中...");
+            }
+        </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>         
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">宁夏扫黑除恶专项斗争取得重要阶段性成果</h2>
+                <div class="article-content">
+                    <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                    <!--新闻段落1-->
+                    <div class="article-section">自扫黑除恶专项斗争开展以来，全区上下按照自治区党委和政府的统一部署，科学谋划、精心组织，强势推进、重拳出击，取得了扫黑除恶专项斗争重要阶段性成果。</div>
+                    <div class="article-section">截至7月5日18时，全区共受理摸排涉黑涉恶问题线索13824条，打掉涉黑涉恶犯罪团伙93个，其中，涉黑社会性质犯罪组织11个、涉恶犯罪集团27个、涉恶犯罪团伙55个，破获涉黑涉恶刑事案件1099起，刑拘犯罪嫌疑人1199名，查封、扣押、冻结涉案资产7.39亿元。梳理出把持基层组织、侵蚀基层政权、利用家族、宗族势力横行乡里的涉黑涉恶案件12起；立案查处涉黑涉恶腐败及“保护伞”案件118件、给予党纪政务处分139人，移送司法机关24人；提起公诉涉黑涉恶案件65件596人，一审判决涉黑涉恶案件53件558人；兑现群众举报涉黑涉恶线索举报奖金37.3万元。</div>
+                    <div class="article-section">此外，结合扫黑除恶专项斗争开展，2018年，全区整顿软弱涣散村党组织846个。2019年，以县为单位，对整顿情况再梳理、再分析、再研判，将存有涉黑涉恶以及其他软弱涣散情形的504个村纳入整顿范围，持续开展整顿，取得了一定成效。</div>
+                    <div class="article-section">在扫黑除恶专项斗争的强大攻势和牵引带动下，全区社会治安形势明显好转，经济发展环境进一步优化，群众安全感持续提升，在最近开展的问卷调查中，96.7%的调查对象认为现在的治安形势好于以前。特别是中央扫黑除恶第20督导组6月12日进驻宁夏以来，在中央扫黑除恶督导组的强力推动下，各地各部门高度重视、全力配合，扫黑除恶专项斗争战果进一步扩大。</div>
+                    <div class="article-section">6月12日至7月4日，受理群众来信来电举报10282条，打掉涉黑社会性质组织1个、涉恶犯罪集团和团伙2个，刑拘犯罪嫌疑人152人，查封、扣押、冻结涉案资产3.7亿元；立案查处涉黑涉恶腐败和“保护伞”案件39件，给予党纪政务处分43人、移送司法机关7人，边督边改取得了新战果。</div>
+                    <!--新闻发布单位（允许0/1个）-->
+                    <div class="article-author"></div>
+                    <!--新闻发布时间（允许0/1个）-->
+                    <div class="article-date">2019年7月3日</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

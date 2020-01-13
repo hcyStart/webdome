@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../dynamic.html?type="+type,linkTitle:_selfLinkTitle[Number(type-1)]}];        
+               renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+//               $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//                });
+//                $(".nav-main-item").on("mouseleave",function(event){
+//                    var curDom = $(event.target);
+//                    $(".nav-hide").hide();
+//                });
+//                creatFastLink();
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+            function creatFastLink() {
+                var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+                var linkDom = "";
+                for(var i=0;i<linkData.length;i++){
+                    linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+                }
+                $("#fastLinkInco").after(linkDom);
+            }
+            function onlineConsult(){
+             alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+            }
+            function buildPage(){
+                alert("正在建设中...");
+            }
+        </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>         
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">自然资源部办公厅关于清理规范自然资源收费项目的通知</h2>
+                <div class="article-content">
+                    <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                        <div class="article-section">各省、自治区、直辖市自然资源主管部门，国家林业和草原局办公室，部机关各司局：</div>
+                        <!--法律法规段落2-->
+                        <div class="article-section">实施更大规模减税降费，大力清理和规范收费项目，是党中央国务院深化供给侧结构性改革作出的重大决策部署，对减轻企业负担、激发微观市场主体活力、改善营商环境、促进经济增长具有重要作用。为进一步加强自然资源收费管理，切实减轻企业负担，现就清理规范自然资源收费项目（以下简称“收费项目”）有关事项通知如下。</div>
+                        <!--法律法规段落n-->
+                        <div class="article-section">一、全面取消违法违规自然资源收费项目。设立和征收行政事业性收费等收费项目，应当依照法律、法规的规定，报国务院和省、自治区、直辖市人民政府及其财政、价格主管部门批准。各地区自然资源主管部门对照部统计汇总的收费项目表（详见附件），对本地区设立的收费项目现状进一步摸底调查，查清收费种类、标准、范围、数额和依据。对未经省政府及其财政、价格主管部门批准的收费项目，以及擅自扩大收费范围或提高标准的，一律取消或纠正。清理完成后保留的收费项目，按照有关规定及时向社会公开。</div>
+                        <div class="article-section">二、对现行自然资源收费项目进行评估规范。按照本地区财政、价格主管部门有关规定，从科学性、合理性角度对现行的收费项目进行再评估。对收费依据不合理、不充分的项目，提出取消的意见；对收费项目繁杂、交叉重复的，提出予以合并的意见；对收费范围过大、标准偏高的，提出予以调整降低的意见。有关意见和建议按程序报本地区财政、价格主管部门批准后实施。</div>
+                        <div class="article-section">三、严格下属行业协会学会入会与收费管理。下属行业协会学会收取会费，应严格按照民政部、财政部有关规定执行。除法律、行政法规另有规定之外，严禁强制入会。加强对收费项目、收费标准审查，必要时组织听证，对不合理的收费项目和标准予以取消和调整。</div>
+                        <div class="article-section">四、将行政成本性支出纳入财政预算管理。在取消和降低有关收费项目后，对机构运行和工作开展所需的行政成本性支出，一律纳入预算管理，由地方财政承担，不得再向相对人收费。各省级自然资源主管部门做好指导和协调工作。</div>
+                        <div class="article-section">五、加大对收费项目的监督检查力度。重点对下属单位、行业协会学会、有业务关联的企业性质的中介服务机构等利用执业限制、资质限制、限额管理等收费项目开展专项检查，对发现的违规收费、乱收费按照有关规定严肃查处。</div>
+                        <div class="article-section">六、分工负责形成工作合力。坚持事权在谁、谁负责原则,各省级自然资源主管部门负责组织清理规范本地区的相关收费项目，明确时间表和路线图，务求取得实效，并于2019年11月底前向部报送清理规范结果。部机关司局按照责任分工，加强督促、指导和检查。各派驻地方的国家自然资源督察局要跟踪督促落实情况。</div>
+                        <!--法律法规发布单位（允许0/1个）-->
+                        <div class="article-author">自然资源部办公厅</div>
+                        <!--法律法规发布时间（允许0/1个）-->
+                        <div class="article-date">2019年6月12日</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

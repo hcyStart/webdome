@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../dynamic.html?type="+type,linkTitle:_selfLinkTitle[Number(type-1)]}];        
+               renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>      
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">中央扫黑除恶第20督导组下沉银川市督导公告</h2>
+                <div class="article-content">
+                    <div class="article-image"><image src="../../images/news/news_06.jpg" style="width:300px;height:200px;" alt="新闻图片"></div>
+                    <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                    <!--新闻段落1-->
+                    <div class="article-section">中央扫黑除恶第20督导组于2019年7月2日至7月5日下沉银川市开展督导工作，期间受理全市涉黑涉恶线索来信举报。在银川市信访局门口设立举报信箱，举报信箱地址：银川市金凤区人民广场西路银川市信访局。</div>
+                    <!--新闻段落2-->
+                    <div class="article-section">中央扫黑除恶第20督导组督导进驻期间（2019年6月12日－7月11日）设立专门举报电话：0951－8737110，专门邮政信箱：银川市1999号信箱。督导组受理举报电话时间为每天8:00－20:00。智能化举报平台：举报人通过扫描专用二维码、网上搜索“12337”或者点击中国长安网、中央政法委长安剑微信公众号和微博等举报链接，就可随时随地登录举报平台，举报信息填写并提交成功后，全国扫黑办即可及时受理。</div>
+                    <!--新闻段落n-->
+                    <div class="article-section">特此公告</div>
+                    <!--新闻发布单位（允许0/1个）-->
+                    <div class="article-author">中央扫黑除恶第20督导组</div>
+                    <!--新闻发布时间（允许0/1个）-->
+                    <div class="article-date">2019年7月1日</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

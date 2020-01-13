@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>因不动产分割（合并）导致权利转移申请转移登记</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+        $(function () {
+           var _selfType = location.search.split("?")[1];
+           if(_selfType){
+            var type = _selfType.split("=")[1];                  
+           }
+           var _selfLinkTitle = ["通知公告","办事指南","法律法规"];
+           var localPath = location.href;
+           var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"公开"},{link:"../../pages/guide",linkTitle:"办事指南"}];       
+           renderSecondLink();
+           function renderSecondLink(){
+              var linkDom ="您所在的位置：";  
+              for(var j= 0;j<_selfLink.length;j++){
+                linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                if(j!=_selfLink.length-1){
+                  linkDom += ' > ' ; 
+                }
+              }
+              $(".link-position").empty();
+              $(".link-position").html(linkDom);
+           }
+//           $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//            });
+//            $(".nav-main-item").on("mouseleave",function(event){
+//                var curDom = $(event.target);
+//                $(".nav-hide").hide();
+//            });
+//            creatFastLink();
+            $("#main-header").load("../../header.html");
+            $("#nav-footer").load("../../footer.html");
+        })
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+        function onlineConsult(){
+            alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+        } 
+        function buildPage(){
+            alert("正在建设中...");
+        }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+        您所在的位置：
+        <a href="../../index.html" target="_blank" title="首页">首页</a>
+        >
+        <a href="../../pages/guide" target="_blank" title="办事指南">办事指南</a>
+    </div>
+    <main id="content" role="main">
+        <div class="index-block">
+            <div class="notice-detail">
+                <h1>因不动产的共有人增加（减少）申请转移登记<br>
+                  <br>
+              </h1>
+                <div class="notice-content">
+				    <div><strong>◆事项名称：因不动产分割（合并）导致权利转移申请转移登记</strong></div>
+                    <h3><strong>◆设定依据：</strong></h3>
+                    <div><span >1、《中华人民共和国物权法》(2007年3月16日主席令第六十二号)</span></div>
+                    <div><span >2、《不动产登记暂行条例》（中华人民共和国国务院令 第656号）</span></div>
+                    <div><span >3、《不动产登记暂行条例实施细则》</span></div>
+					
+                    <br>
+                    <h3>◆<strong>提交材料：</strong></h3>
+                    <div><span >1、不动产登记申请表；（原件）</span></div>
+                    <div><span >2、身份证明材料：（原件、复印件一份，原件核对后退回）</span></div>
+                    <div>　　<span >境内自然人：提交居民身份证或军官证、士官证；身份证遗失的，应提交临时身份证。未成年人可以提交居民身份证或户口簿；</span></div>
+                    <div>　　<span >香港、澳门特别行政区自然人：提交香港、澳门特别行政区居民身份证、护照，或者来往内地通行证；</span></div>
+                    <div>　　<span >台湾地区自然人：提交台湾居民来往大陆通行证；</span></div>
+                    <div>　　<span >华侨：提交中华人民共和国护照和国外长期居留身份证件； </span></div>
+                    <div>　　<span >外籍自然人：中国政府主管机关签发的居留证件，或者其所在国护照；</span></div>
+                    <div>　　<span >境内法人或其他组织：营业执照，或者组织机构代码证，或者其他身份登记证明； </span></div>
+                    <div> 香港特别行政区、澳门特别行政区、台湾地区的法人或其他组织：提交其在境内设立分支机构或代表机构的批准文件和注册证明；</div>
+                    <div>境外法人或其他组织：提交其在境内设立分支机构或代表机构的批准文件和注册证明。 法人提交法定代表人（非法人提交负责人）的身份证复印件、受委托人的身份证复印件（2份复印件均需加盖公章）以及法定代表人身份证明书、授权委托书（证明书、委托书均需原件</div>
+                    <div>3、原《国有土地使用证》、《房屋所有权证》或《不动产权证》；（原件）</div>
+                    <div>4、土地、规划部门等同意分割（合并）的材料；（原件）</div>
+                    <div>5、《不动产分割（合并）转让协议》； </div>
+                    <div>6、土地分割（合并）的，提交“权籍调查成果报告”；房屋分割（合并）的，提交“房屋测绘成果报告”；（原件） </div>
+                    <div>7、按规定要求消防验收的，符合消防验收的材料；（原件） </div>
+					<div>8、不动产为国有的，属于行政事业单位的提交同级财政部门同意转让的批准文件；属于企业的提交同级国资委同意转让的批准文件；（原件） </div>
+					<div>9、经济适用房、房改房、集资房、康居安置房以及其他土地使用权类型为划拨的房屋，或者以划拨方式取得的国有土地使用权，需提交土地出让金缴纳票据；（原件、复印件一份，原件核对后退回） </div>
+					<div>10、申请人为法人、非法人组织且《分割（合并）转让协议》中有支付对价条款的，提交相应的发票，并加盖“发票专用章”或者“财务专用章”；（原件）</div>
+					<div>11、缴税凭证或免税证明；（原件） </div>
+                    <div><span>备注：申请共有的，需全体共有人共同申请；</span></div>
+                    <div>　　<span>委托办理的，代理人应当提供被代理人签字或者盖章的授权委托书（原件）、被代理人和代理人身份证明（复印件）。</span></div>
+                    <br>
+                    <h3><strong>办理程序：</strong></h3>
+                    <div><span>申请受理&#8594;审核&#8594;记载于登记簿&#8594;缮证发证</span></div>
+                    <br>
+                    <h3><strong>办理时限：</strong></h3>
+                    <div><span>自做出受理决定之日起 4个工作日办结（不含权籍调查及公告时间）。</span></div>
+                    <div><strong>政府招商引资项目及新开办企业类：自作出受理决定起1个工作日。</strong></div>
+                    <br>
+                    <h3><strong>收费标准：</strong></h3>
+                    <div><span>依据国家发展和改革委员会、财政部文件发改价格规﹝2016﹞2559号登记费：住宅：80/件；非住宅550/件；小微企业免收登记费。 </span></div>
+                    <br>
+                    <h3><strong>办理单位：</strong></h3>
+                    <div><span>银川市不动产登记事务中心</span></div>
+                    <br>
+                    <h3><strong>办理地点：</strong></h3>
+                    <div><span>银川市民大厅B3厅</span></div>
+                    <br>
+                    <h3><strong>咨询电话：</strong></h3>
+                    <div><span>5555412、5555413</span></div>
+                    <br>
+                    <h3><strong>查询网址：</strong></h3>
+                    <div><a href="http://zrzyj.yinchuan.gov.cn" target="_blank">http://zrzyj.yinchuan.gov.cn</a></div>
+                    <div><a href="http://smdt.yinchuan.gov.cn" target="_blank">http://smdt.yinchuan.gov.cn</a></div>
+                    <br>
+                    <h3><strong>办理流程：</strong></h3>
+                    <img width="472" height="423" src="guide-zhuanyi-16_wps28.jpg" ><br>
+                </div>
+          </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>西安嘉瑞飞材料有限公司</title>
+    <meta name="keywords" content="西安嘉瑞飞材料有限公司,西安嘉瑞飞,西安嘉瑞飞材料,嘉瑞飞材料有限公司,嘉瑞飞材料" />
+    <meta name="description" content="西安嘉瑞飞材料有限公司" />
+    <script>
+        var typePath = "";
+        $(function () {
+               var Menulevel_1 = "./";
+               var Menulevel_2 = "../";
+               var Menulevel_3 = "../../";
+               var curPath = location.href.substring(location.href.search("pages"));
+                if(curPath.search("pages") == -1){
+                    typePath = Menulevel_1;
+                }else if(curPath.search("news") != -1||curPath.search("open") != -1){
+                    typePath = Menulevel_3;
+                }else if(curPath.search("pages")==0&&curPath.search("news") == -1&&curPath.search("open") == -1){
+                    typePath = Menulevel_2;
+                }
+               $("#contactWe").attr("href",typePath+"pages/contactDetail");
+               $("#imagePosition").attr("src",typePath+"images/index/gov_sign.png");
+               $("#approintmentFooterUrl").attr("href",typePath+"pages/appointment.html");
+               creatFastLink();
+        });
+        function creatFastLink() {
+            var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+            var linkDom = "";
+            for(var i=0;i<linkData.length;i++){
+                linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+            }
+            $("#fastLinkInco").after(linkDom);
+        }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <div class="center">
+        <ul class="footer-tos">
+            <li>
+                <p class="link-title"><a href="">关于我们</a></p>
+                <div class="footer-link">
+                    <div><a>公司简介</a></div>
+                    <div><a>新闻资讯</a></div>
+                </div>
+            </li>
+            <li>
+                <p class="link-title"><a href="" target="_blank">产品</a></p>
+                <div class="footer-link">
+                    <div><a>无机化学品</a></div>
+                    <div><a>靶材及蒸镀材料</a></div>
+                    <div><a>金属材料及制品</a></div>
+                    <div><a>贵金属催化剂</a></div>
+                </div>  
+                <div class="footer-link">
+                    <div><a>有机化学品</a></div>
+                    <div><a>元素索引</a></div>
+                    <div><a>电池材料</a></div>
+                    <div><a>新产品和重点产品</a></div>
+                </div>                                
+            </li>
+            <li>
+                <p class="link-title"><a href="" target="_blank">核心材料</a></p>
+                <div class="footer-link">
+                    <div><a>靶材</a></div>
+                    <div><a>蒸镀料</a></div>
+                    <div><a>电池材料</a></div>
+                    <div><a>卤化物</a></div>
+                    <div><a>超高温材料</a></div>
+                </div>  
+                <div class="footer-link">
+                    <div><a>制品</a></div>
+                    <div><a>无机盐类材料</a></div>
+                    <div><a>金属球型粉</a></div>
+                    <div><a>贵金属催化物</a></div>
+                </div>
+            </li>
+            <li>
+                <p class="link-title"><a href=""  target="_blank">联系我们</a></p>
+                <div class="footer-info">
+                    <div><a>全国服务热线：40-6000-800</a></div>
+                    <div><a>总机：029-845256356</a></div>
+                    <div><a>传真：029-845256356</a></div>
+                    <div><a>地址：陕西省西安市雁塔区富贵路135号高科技创业园F座12-16楼</a></div>
+                </div> 
+            </li>
+            <li>
+                <p class="qrcode-img"></p>
+                <p class="qrcode-title">xx公众号</p>
+            </li>
+        </ul>
+        <div class="contact-info">
+            <div class="contect-addressinfo" style="margin:0 auto; padding-top:15px">
+                <p>Copyright©2018-2019 西安xx材料股份有限公司</p>
+                <p>陕ICP备08036234号-8</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

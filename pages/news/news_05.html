@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>银川市不动产登记事务中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/noticeDetail.css">   
+    <script src="../../js/jquery-3.4.1..min.js"></script>
+    <script>
+            $(function () {
+               var _selfType = location.search.split("?")[1];
+               if(_selfType){
+                var type = _selfType.split("=")[1];                  
+               }
+               var _selfLinkTitle = ["不动产信息","新闻动态","图片新闻"];
+               var localPath = location.href;
+               var _selfLink = [{link:"../../index.html",linkTitle:"首页"},{link:"#",linkTitle:"动态"},{link:"../reportlist.html",linkTitle:_selfLinkTitle[Number(type-1)]}];                 renderSecondLink();
+               function renderSecondLink(){
+                  var linkDom ="您所在的位置：";  
+                  for(var j= 0;j<_selfLink.length;j++){
+                    linkDom +='<a href='+_selfLink[j].link+'  title="'+_selfLink[j].linkTitle+'">'+_selfLink[j].linkTitle+'</a>';
+                    if(j!=_selfLink.length-1){
+                      linkDom += ' > ' ; 
+                    }
+                  }
+                  $(".link-position").empty();
+                  $(".link-position").html(linkDom);
+               }
+//               $(".nav-main-item").on("mouseover",function(event){
+//                var curDom = $(event.target);
+//                $(event.target).find(".nav-hide").show();
+//                });
+//                $(".nav-main-item").on("mouseleave",function(event){
+//                    var curDom = $(event.target);
+//                    $(".nav-hide").hide();
+//                });
+//                creatFastLink();
+                $("#main-header").load("../../header.html");
+                $("#nav-footer").load("../../footer.html");
+            })
+            function creatFastLink() {
+                var linkData = [{linkUrl:"http://www.mnr.gov.cn",linkTitle:"自然资源部"},{linkUrl:"http://zrzyt.nx.gov.cn",linkTitle:"自治区自然资源厅"},{linkUrl:"http://zrzyj.yinchuan.gov.cn",linkTitle:"银川自然资源局"}];
+                var linkDom = "";
+                for(var i=0;i<linkData.length;i++){
+                    linkDom += '<a href='+linkData[i].linkUrl+' target="_blank" title="'+linkData[i].linkTitle+'">'+linkData[i].linkTitle+'</a>';
+                }
+                $("#fastLinkInco").after(linkDom);
+            }
+            function onlineConsult(){
+                alert("如有问题请直接反馈至邮箱nxycbdc@126.com");
+            }
+            function buildPage(){
+                alert("正在建设中...");
+            }
+    </script>
+</head>
+
+<body style="zoom: 1;">
+    <header id="main-header" class="header-main">
+    </header>
+    <div class="link-position">
+    </div>          
+    <main id="content" role="main">
+        <div class="index-block">
+		<div class="article-detail">
+                <!--新闻标题（允许0/1个）-->
+                <h2 class="article-title">聚集青春力量 再次喜获殊荣--银川市不动产登记事务中心获评区级“青年文明号”
+                  <!--新闻图片1（图片来源于网络示例）-->
+                </h2>
+                <div class="article-content">
+                        <!--新闻段落（允许0/N个），每段新闻内容单独存放在一个article-section中。段落前后文字不能存在空格-->
+                        <!--新闻段落1-->
+                        <div class="article-section">2019年5月，银川市不动产登记事务中心市民大厅服务窗口被命名为“2017-2018年度宁夏青年文明号”。这是自获评2016-2017年度银川市青年文明号以来的又一殊荣，离不开中心青年不动产登记工作者严谨务实、服务创优、爱岗敬业、奉献社会的优良作风。</div>
+                        <!--新闻段落3-->
+                        <div class="article-section">不动产登记是公益性、服务性、社会性很强的“窗口”行业，每办一本证书、每收一笔规费都涉及到社会各界、千家万户，与群众生产生活息息相关，关系着群众的根本利益。因此，“学习型”、“服务型”、“奉献型”青年文明号始终是我中心的创建宗旨。通过加强监督管理、提升服务意识、简化办事流程、优化服务效率等一系列便民利民工作举措和广泛动员青年积极参与志愿服务、送证上门、技能比拼、法律宣传等活动，创一流服务业绩，树政府窗口形象，充分展现了青年不动产登记工作者“全心全意为人民服务”的风采风貌。</div>
+                        <!--新闻段落4-->
+                        <div class="article-section">以梦为马，不负韶华。银川市不动产登记事务中心将充分发挥青年文明号先进、先行、先锋作用，持续深化岗位创新、创效、创优实践，积极打造不动产登记利民惠民服务品牌，进一步汇聚青春力量，在服务人民群众生产生活、促进不动产登记发展的实践中作出新的更大的贡献。</div>
+                        <!--新闻段6-->
+                        <div class="article-image"><image src="../../images/news/news_05_01.jpg" style="width:500px;height:303px;" alt="新闻图片"></div>
+                        <!--新闻发布单位（允许0/1个）-->
+                        <div class="article-author">银川市不动产登记事务中心</div>
+                        <!--新闻发布时间（允许0/1个）-->
+                        <div class="article-date">2019年5月24日</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="nav-footer" class="nav-footer">
+    </footer>
+</body>
+
+</html>
