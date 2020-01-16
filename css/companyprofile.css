@@ -1,0 +1,42 @@
+body {
+    background-color: #F1F1F1;
+}
+.nav-main-item{
+    width: 13.75%;
+}
+#content{
+    background-color: #fbfbfb;
+}
+.search-panbel{
+    height: 40px;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+.company-content{
+    margin: 0 90px;
+}
+.header-companyimage{
+    width: 100%;
+    height: 170px;
+}
+.company-imageshow {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.company-title{
+    color: #2F86FD;
+    height: 40px;
+    border-bottom: 1px solid #2F86FD;
+    font-size: 20px;
+}
+.company-introduce{
+    padding: 30px 0 45px 0;
+}
+.introduce-paragraph{
+    text-indent: 38px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #666666;
+    padding-bottom: 15px;    
+}

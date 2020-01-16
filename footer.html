@@ -21,7 +21,7 @@
                 }else if(curPath.search("pages")==0&&curPath.search("news") == -1&&curPath.search("open") == -1){
                     typePath = Menulevel_2;
                 }
-               $("#contactWe").attr("href",typePath+"pages/contactDetail");
+               $("#enterpriseIntroduct").attr("href",typePath+"pages/companyprofile.html");
                $("#imagePosition").attr("src",typePath+"images/index/gov_sign.png");
                $("#approintmentFooterUrl").attr("href",typePath+"pages/appointment.html");
                creatFastLink();
@@ -38,12 +38,12 @@
 </head>
 
 <body style="zoom: 1;">
-    <div class="center">
+    <div class="footer-center">
         <ul class="footer-tos">
             <li>
                 <p class="link-title"><a href="">关于我们</a></p>
                 <div class="footer-link">
-                    <div><a>公司简介</a></div>
+                    <div><a id="enterpriseIntroduct">公司简介</a></div>
                     <div><a>新闻资讯</a></div>
                 </div>
             </li>

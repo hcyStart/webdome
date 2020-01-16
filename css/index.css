@@ -75,10 +75,11 @@
     float: right;
     font-size: 18px ;
 }
-.info-title{
-    height: 55px;
-    line-height: 70px;
+.info-header{
     text-align: center;
+    padding-top: 20px; 
+}
+.info-title{
     color: #333333;
     font-size: 26px;
     font-weight: 800;
